@@ -41,7 +41,7 @@ goto begin
 :option2
 cls
 echo Uruchamiam skrypt PYTHON
-python python.py
+python raport.py
 pause
 cls
 goto begin
