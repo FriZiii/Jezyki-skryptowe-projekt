@@ -30,3 +30,14 @@ tbody{
     background-color: #8E2828;
     height: 100%;
 }
+
+.table{
+    width: 100%;
+}
+
+.smth{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: #8E2828;
+}

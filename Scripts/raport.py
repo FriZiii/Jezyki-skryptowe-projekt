@@ -25,13 +25,14 @@ html += (f"<h2>Ilość kombinacji dająca wynik {algorithm.n} to: {algorithm.cou
 html += "</div></div>"
 
 html +="</div>"
+html +="<div class = \"container\">"
 for idx, val in enumerate(algorithm.table):
-    if(len(val) != 0):
-        html +=(f"<h2>Sumy {str(idx+2)} liczb dająca wynik {str(algorithm.n)}</h2>")
-        html +=(tabulate(val, tablefmt='html'))
-    else:
-        html +=(f"<h2>Sumy {str(idx+2)} liczb dająca wynik {str(algorithm.n)}</h2><br>")
-        html +=(f"Brak sumy {str(idx+2)} liczb spełniających warunek<br>")
+    html+= (f"<div class = \"table\">")
+    html+=(f"<div class = \"smth\">Suma {idx+2} liczb dająca wartość {algorithm.n}</div>")
+    for i in val:
+        html+=(f"<div class = \"smth\">{i}</div>")
+    html += "</div>"
+html += "</div>"
 
 html+=("</body></html>")
 file.write(html)
