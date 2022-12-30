@@ -37,18 +37,12 @@ def max_num(result):
 
 #file = open('E:/Studia/Jezyki-skryptowe/Projekt/Jezyki-skryptowe-projekt/results.txt', 'w')
 
-#file.write("Zadanie 4 - \"Liczby Pierwsze\", Algorytmion 2012  \n")
-#file.write("Program wyznacza wszystkie sumy roznych liczb pierwszych rowne n \n\n" )
-
 n = int(input("Podaj n: "))
 primes = get_primes(n)
 
-#file.write(f"Rozpatrywane liczby pierwsze dla n = {n} to ")
-#file.write(str(primes) + "\n")
-
 result = sums_up_to(n)
+count = len(result)
 max = max_num(result)
-#file.write(f"Najwiecej liczb roznych liczb dajacych wynik {n} to {str(max)} \n\n")
 
 table = []
 for i in range(2, max+1):

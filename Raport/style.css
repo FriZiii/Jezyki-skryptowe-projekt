@@ -1,0 +1,32 @@
+﻿body{
+    background-color: #131313;
+    color: white;
+}
+tbody{
+    color: white;
+}
+.container {
+    display: flex;
+}
+
+.child {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+
+}  
+
+.raport{
+    padding: 10px;
+    margin: 10px;
+    background-color: #8E2828;
+    margin-bottom: 10px;
+}
+
+.data{
+    margin: 10px;
+    padding: 10px;
+    background-color: #8E2828;
+    height: 100%;
+}
