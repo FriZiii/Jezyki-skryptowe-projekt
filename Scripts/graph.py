@@ -1,4 +1,4 @@
-﻿import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 from algorithm import table, n
 
 amount = []
@@ -9,7 +9,7 @@ for i in table:
 for i in range(len(table)):
     name.append(i+2)
 
-plt.bar(name, amount)
-plt.xlabel("N")
-plt.ylabel("ILOŚĆ KOMBINACJI")
-plt.title(f"LICZBA KOMBINACJI N LICZB PIERWSZYCH DAJĄCA WYNIK {n}")
+    plt.bar(name, amount)
+    plt.xlabel("N")
+    plt.ylabel("ILOŚĆ KOMBINACJI")
+    plt.title(f"LICZBA KOMBINACJI N LICZB PIERWSZYCH DAJĄCA WYNIK {n}")
