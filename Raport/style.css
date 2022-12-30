@@ -1,5 +1,14 @@
-﻿body{
-    background-color: #131313;
+﻿:root {
+    --red: #8E2828; 
+    --dark_grey: #131313;
+    --green: #006230;
+    --yellow: #e39118;
+    --blue: #262261;
+    --drak-blue: #14123a;
+}
+
+body{
+    background-color: var(--dark_grey);
     color: white;
 }
 tbody{
@@ -14,20 +23,19 @@ tbody{
     flex: 1;
     display: flex;
     flex-flow: column;
-
 }  
 
 .raport{
     padding: 10px;
     margin: 10px;
-    background-color: #8E2828;
-    margin-bottom: 10px;
+    background-color: var(--blue);
+    height: 100%;
 }
 
 .data{
     margin: 10px;
     padding: 10px;
-    background-color: #8E2828;
+    background-color: var(--blue);
     height: 100%;
 }
 
@@ -35,9 +43,32 @@ tbody{
     width: 100%;
 }
 
-.smth{
+.main{
     text-align: center;
     margin: 10px;
     padding: 10px;
-    background-color: #8E2828;
+    background-color: var(--yellow);
+}
+.value{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--green);
+}
+
+.no-value
+{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--red);
+}
+
+.text-data
+{
+    color: var(--yellow)
+}
+
+.name{
+    color: var(--drak-blue)
 }

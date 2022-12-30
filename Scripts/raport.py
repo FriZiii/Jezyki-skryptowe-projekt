@@ -19,18 +19,21 @@ html +="<div class = \"child\"><div class = \"raport\"><img src =\"plot.png\", a
 
 html +=(f"<div class = \"child\">")
 html +=(f"<div class = \"raport\"><h1>Raport z dnia {now}</h1></div>")
-html += (f"<div class = \"data\"><h2>Wartość wejsciowa: {algorithm.n}</h2>")
-html += (f"<h2>Rozpatrywane liczby pierwsze: </h2><h2>{algorithm.primes}</h2>")
-html += (f"<h2>Ilość kombinacji dająca wynik {algorithm.n} to: {algorithm.count}</h2>")
+html += (f"<div class = \"data\"><h2>Wartość wejsciowa</h2><h2 class = \"text-data\">{algorithm.n}</h2>")
+html += (f"<h2>Rozpatrywane liczby pierwsze: </h2><h2 class = \"text-data\">{algorithm.primes}</h2>")
+html += (f"<h2>Ilość kombinacji dająca wynik {algorithm.n} </h2><h2 class = \"text-data\"> {algorithm.count}</h2>")
+html += (f"<h2 = class = \"name\">@Mateusz Sawosz</h2>")
 html += "</div></div>"
 
 html +="</div>"
 html +="<div class = \"container\">"
 for idx, val in enumerate(algorithm.table):
     html+= (f"<div class = \"table\">")
-    html+=(f"<div class = \"smth\">Suma {idx+2} liczb dająca wartość {algorithm.n}</div>")
+    html+=(f"<div class = \"main\">Suma {idx+2} liczb dająca wartość {algorithm.n}</div>")
+    if(len(val) == 0):
+                html+=(f"<div class = \"no-value\">Brak {idx+2} liczb spełniających warunek </div>")
     for i in val:
-        html+=(f"<div class = \"smth\">{i}</div>")
+        html+=(f"<div class = \"value\">{i}</div>")
     html += "</div>"
 html += "</div>"
 

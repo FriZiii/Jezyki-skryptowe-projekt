@@ -37,7 +37,7 @@ def max_num(result):
 
 #file = open('E:/Studia/Jezyki-skryptowe/Projekt/Jezyki-skryptowe-projekt/results.txt', 'w')
 
-n = int(input("Podaj n: "))
+n = int(input("║Jaką liczbę chcesz otrzymać poprzez sumowanie liczb pierwszych: "))
 primes = get_primes(n)
 
 result = sums_up_to(n)
