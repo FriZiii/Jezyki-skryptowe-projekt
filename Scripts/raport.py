@@ -22,7 +22,6 @@ html +=(f"<div class = \"raport\"><h1>Raport z dnia {now}</h1></div>")
 html += (f"<div class = \"data\"><h2>Wartość wejsciowa</h2><h2 class = \"text-data\">{algorithm.n}</h2>")
 html += (f"<h2>Rozpatrywane liczby pierwsze: </h2><h2 class = \"text-data\">{algorithm.primes}</h2>")
 html += (f"<h2>Ilość kombinacji dająca wynik {algorithm.n} </h2><h2 class = \"text-data\"> {algorithm.count}</h2>")
-html += (f"<h2 = class = \"name\">@Mateusz Sawosz</h2>")
 html += "</div></div>"
 
 html +="</div>"
@@ -36,7 +35,7 @@ for idx, val in enumerate(algorithm.table):
         html+=(f"<div class = \"value\">{i}</div>")
     html += "</div>"
 html += "</div>"
-
+html+="<div class = \"footer\"><h2 = class = \"name\"><a href = \"https://github.com/FriZiii/Jezyki-skryptowe-projekt\">@Mateusz Sawosz</a></h2></div>"
 html+=("</body></html>")
 file.write(html)
 file.close()

@@ -4,7 +4,6 @@
     --green: #006230;
     --yellow: #e39118;
     --blue: #262261;
-    --drak-blue: #14123a;
 }
 
 body{
@@ -29,7 +28,6 @@ tbody{
     padding: 10px;
     margin: 10px;
     background-color: var(--blue);
-    height: 100%;
 }
 
 .data{
@@ -71,4 +69,17 @@ tbody{
 
 .name{
     color: var(--drak-blue)
+}
+
+a{
+    color: #e3911880;
+    text-decoration: none;
+}
+a:hover{
+    color: #e3911899;
+}
+.footer{
+    background-color: var(--blue);
+    padding: 10px;
+    text-align: center;
 }
