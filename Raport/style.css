@@ -1,85 +1,91 @@
 ﻿:root {
-    --red: #8E2828; 
-    --dark_grey: #131313;
-    --green: #006230;
-    --yellow: #e39118;
-    --blue: #262261;
+  --red: #8e2828;
+  --dark_grey: #131313;
+  --green: #006230;
+  --yellow: #e39118;
+  --blue: #262261;
+  --orange: #ee4036;
 }
 
-body{
-    background-color: var(--dark_grey);
-    color: white;
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark_grey);
+  color: white;
 }
-tbody{
-    color: white;
+
+tbody {
+  color: white;
 }
+
 .container {
-    display: flex;
+  display: flex;
 }
 
 .child {
-    text-align: center;
-    flex: 1;
-    display: flex;
-    flex-flow: column;
-}  
-
-.raport{
-    padding: 10px;
-    margin: 10px;
-    background-color: var(--blue);
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-flow: column;
 }
 
-.data{
-    margin: 10px;
-    padding: 10px;
-    background-color: var(--blue);
-    height: 100%;
+.raport {
+  padding: 10px;
+  margin: 10px;
+  background-color: var(--blue);
 }
 
-.table{
-    width: 100%;
+.data {
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--blue);
+  height: 100%;
 }
 
-.main{
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-    background-color: var(--yellow);
-}
-.value{
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-    background-color: var(--green);
+.table {
+  width: 100%;
 }
 
-.no-value
-{
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-    background-color: var(--red);
+.main {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--yellow);
+}
+.value {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--green);
 }
 
-.text-data
-{
-    color: var(--yellow)
+.no-value {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--red);
 }
 
-.name{
-    color: var(--drak-blue)
+.text-data {
+  color: var(--orange);
 }
 
-a{
-    color: #e3911880;
-    text-decoration: none;
+.name {
+  color: var(--drak-blue);
 }
-a:hover{
-    color: #e3911899;
+
+a {
+  color: #ee403680;
+  text-decoration: none;
 }
-.footer{
-    background-color: var(--blue);
-    padding: 10px;
-    text-align: center;
+
+a:hover {
+  color: #ee403699;
+}
+
+.footer {
+  margin-top: auto;
+  background-color: var(--blue);
+  text-align: center;
 }

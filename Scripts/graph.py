@@ -19,4 +19,4 @@ with plt.rc_context({
     plt.bar(name, amount, color = "#ee4036")
     plt.xlabel("N")
     plt.ylabel("ILOŚĆ KOMBINACJI")
-    plt.title(f"LICZBA KOMBINACJI N LICZB PIERWSZYCH DAJĄCA WYNIK {n}")
+    plt.title(f"LICZBA KOMBINACJI N LICZB PIERWSZYCH KTÓRYCH SUMA DAJE WYNIK {n}")
